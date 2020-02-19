@@ -21,17 +21,8 @@ This will compile my library with useful C functions and my fillit files, creati
 In order to run the executable, type:
 > ./fillit "file name you would like it to solve with tetris pieces"
 
-Valid Pieces according to project's subject:
-....  ....   ####  ....   .##.  ....   .#..  ....   ....
-..##  ....   ....  ....   ..##  .##.   ###.  ##..   .##.
-..#.  ..##   ....  ##..   ....  ##..   ....  #...   ..#.
-..#.  ..##   ....  ##..   ....  ....   ....  #...   ..#.
-
-Invalid Pieces according to project's subject:
-####  ...#  ##...   #.  ....  ..##  ####  ,,,,  .HH.
-...#  ..#.  ##...   ##  ....  ....  ####  ####  HH..
-....  .#..  ....    #.  ....  ....  ####  ,,,,  ....
-....  #...  ....        ....  ##..  ####  ,,,,  ....
+![Image of Subject]
+(https://github.com/MuSuareZ/Fillit/subject.png)
 
 ***Remember that each piece should be separated by one space (VIM editor or NANO by default already inputs a space in the end)!***
 
@@ -45,12 +36,16 @@ I recommend you to open solve.c with your favorite text editor (VIM please :D ),
 
 There you will find 3 special lines commented out by //
 > // system("clear");
+
 > // print_map(mappi->map);
+
 > // usleep(10000);
 
 Please remove the // so it will look like this:
 > system("clear");
+
 > print_map(mappi->map);
+
 > usleep(10000);
 
 Remember to re-compile our program since we modify its source files:
