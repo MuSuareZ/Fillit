@@ -21,7 +21,7 @@ This will compile my library with useful C functions and my fillit files, creati
 In order to run the executable, type:
 > ./fillit "file name you would like it to solve with tetris pieces"
 
-![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/subject.png)
+![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/img/subject.png)
 
 ***Remember that each piece should be separated by one space (VIM editor or NANO by default already inputs a space in the end)!***
 
