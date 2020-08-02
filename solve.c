@@ -6,7 +6,7 @@
 /*   By: msuarez- <msuarez-@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/16 10:12:09 by bkonjuha          #+#    #+#             */
-/*   Updated: 2020/08/02 15:48:09 by msuarez-         ###   ########.fr       */
+/*   Updated: 2020/08/02 16:30:15 by msuarez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,9 +95,9 @@ int		solve(t_data *tetris, t_map *mappi)
 
 	while (tetris->n_tetris)
 	{
-		// system("clear");
-		// print_map(mappi->map);
-		// usleep(15000);
+		system("clear");
+		print_map(mappi->map);
+		usleep(15000);
 		if (next_spot(mappi) == 0 && tetris->n_tetris > 0)
 			return (0);
 		if (check_block(tetris, mappi, mappi->x, mappi->y))
@@ -115,6 +115,6 @@ int		solve(t_data *tetris, t_map *mappi)
 			add_block(tetris, mappi, '.', xy);
 		}
 	}
-	// system("clear");
+	system("clear");
 	return (1);
 }
