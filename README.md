@@ -23,22 +23,27 @@ In order to run the executable, type:
 
 ![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/img/subject.png)
 
-***Remember that each piece should be separated by one space (VIM editor or NANO by default already inputs a space in the end)!***
+***Remember that each piece should be separated by one space (VIM editor or NANO by default already inputs a space in the end of the file)!***
 
 ***PS: You should always ignore the quotation marks, they are just comments of what you should input***
 
 # Debug
 
+***If you have a MacOS/Linux, follow step 1.a and then step 2. If you have a Windows system, follow step 1.b, step 1.a and then step 2.***
+
+***Step 1.a***
 If you are having some issues and would like to see what's happening and you are brave enough to modify some code lines,
 I recommend you to open solve.c with your favorite text editor (VIM please :D ), find the function:
 > int   solve(t_data *tetris, t_map *mappi)
 
-There you will find 3 special lines commented out by //
-> // system("clear");
+There you will find 4 special lines commented out by //
+> (line 98) // system("clear");
 
-> // print_map(mappi->map);
+> (line 99) // print_map(mappi->map);
 
-> // usleep(10000);
+> (line 100) // usleep(10000);
+
+> (line 118) // system("clear");
 
 Please remove the // so it will look like this:
 > system("clear");
@@ -47,17 +52,36 @@ Please remove the // so it will look like this:
 
 > usleep(10000);
 
+> system("clear");
+
+***Step 1.b***
+On the lines *// system("clear");* , clear is not a command recognized by Windows, but cls is and it does the same thing that we need.
+With that in mind, you would need to change all the "clear" commands into "cls" like this:
+
+> (line 98) // system("clear");
+
+> (line 118) // system("clear");
+
+to
+
+> (line 98) // system("cls");
+
+> (line 118) // system("cls");
+
+Now just move back to ***Step 1.a*** and you are good to go!
+
+***Step 2***
+
 Remember to re-compile our program since we modify its source files:
 > make re
 
 Now run your test file with fillit executable as explained above and you will be able to visualize the test solving itself
 in each iteration of the loop! Awesome, isn't it?
 
-*** REMEMBER: This three lines does not follow norminette rules! I added them for education purposes, but did not uploaded
-it before getting evaluated! ***
+What's happening there is that we are clearing our screen from previous prints, printing the actual map situation and telling the program to sleep for 0.015 seconds
+in order to make sure the user can see what changed and then repeating these steps until everything is done.
 
 # What to improve?
 
 There is always room for improvements in terms of performance and readability. In the future I might also implement the
 error messages to make it more descriptive about what is wrong, so the user will know what to fix.
-
