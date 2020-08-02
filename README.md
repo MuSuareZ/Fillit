@@ -29,11 +29,13 @@ In order to run the executable, type:
 
 # Debug
 
+If you are having some issues and would like to see what's happening and you are brave enough to modify some code lines,
+I recommend you to open *solve.c* with your favorite text editor (VIM please :D ).
+
 ***If you have a MacOS/Linux, follow step 1.a and then step 2. If you have a Windows system, follow step 1.b, step 1.a and then step 2.***
 
 ***Step 1.a***
-If you are having some issues and would like to see what's happening and you are brave enough to modify some code lines,
-I recommend you to open solve.c with your favorite text editor (VIM please :D ), find the function:
+Find the function:
 > int   solve(t_data *tetris, t_map *mappi)
 
 There you will find 4 special lines commented out by //
@@ -41,7 +43,7 @@ There you will find 4 special lines commented out by //
 
 > (line 99) // print_map(mappi->map);
 
-> (line 100) // usleep(10000);
+> (line 100) // usleep(15000);
 
 > (line 118) // system("clear");
 
@@ -50,7 +52,7 @@ Please remove the // so it will look like this:
 
 > print_map(mappi->map);
 
-> usleep(10000);
+> usleep(15000);
 
 > system("clear");
 
