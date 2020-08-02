@@ -83,6 +83,9 @@ in each iteration of the loop! Awesome, isn't it?
 What's happening there is that we are clearing our screen from previous prints, printing the actual map situation and telling the program to sleep for 0.015 seconds
 in order to make sure the user can see what changed and then repeating these steps until everything is done.
 
+![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/img/debugon.mov)
+![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/img/debugoff.mov)
+
 # What to improve?
 
 There is always room for improvements in terms of performance and readability. In the future I might also implement the
