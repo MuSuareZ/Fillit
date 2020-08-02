@@ -86,9 +86,11 @@ in order to make sure the user can see what changed and then repeating these ste
 # Images
 
 ***Debug OFF***
+
 ![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/img/debugoff.gif)
 
 ***Debug ON***
+
 ![Image of Subject](https://github.com/MuSuareZ/Fillit/blob/master/img/debugon.gif)
 
 # What to improve?
